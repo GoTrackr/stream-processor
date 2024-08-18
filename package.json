@@ -4,15 +4,17 @@
 	"description": "Kafka producer for the SIRI-VM feed, provided by the Bus Open Data Service from the UK Government's Department for Transport",
 	"type": "module",
 	"scripts": {
-		"build": "npm run compile",
+		"build": "npm run compile && npm run minify",
 		"compile": "tsc",
 		"dev": "tsc --pretty && node dist/index.js",
+		"minify": "uglifyjs --compress --mangle --output dist/index.js -- dist/index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "UNLICENSED",
 	"devDependencies": {
-		"typescript": "^5.5.4"
+		"typescript": "^5.5.4",
+		"uglify-js": "^3.19.2"
 	}
 }
