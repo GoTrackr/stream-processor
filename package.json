@@ -1,0 +1,8 @@
+{
+	"name": "stream-processor",
+	"version": "1.0.0",
+	"description": "Kafka producer for the SIRI-VM feed, provided by the Bus Open Data Service from the UK Government's Department for Transport",
+	"keywords": [],
+	"author": "",
+	"license": "UNLICENSED"
+}
